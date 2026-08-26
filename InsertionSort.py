@@ -12,14 +12,33 @@ def insertionSort(arr):
         # greater than key, to one position ahead
         # of their current position
         j = i-1
-        while j >=0 and key < arr[j] :
+        while j >=0 and key < arr[j] : 
+                arr[j+1] = arr[j]
+                j -= 1
+        arr[j+1] = key
+ 
+def DescendSort(arr):
+    for i in range(1, len(arr)):
+  
+        key = arr[i]
+        
+        j = i-1
+        while j >=0 and key > arr[j]: # > - for descending
                 arr[j+1] = arr[j]
                 j -= 1
         arr[j+1] = key
   
 # Driver code to test above
-arr = [2, 7, 8, 5, 1, 12, 19, 15, 12]
+arr = [4, 7, 8, 24, 1, 12, 29, 15, 17]
+
+print(f"Array = {arr}")
 insertionSort(arr)
-print ("Sorted array is:")
+print("Ascending Order:")
 for i in range(len(arr)):
-    print ("%d" %arr[i])
+    print("%d" %arr[i])
+   
+print()
+DescendSort(arr)
+print("Descending Order:")
+for i in range(len(arr)):
+    print("%d" %arr[i])
