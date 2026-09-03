@@ -2,9 +2,11 @@
 #Selection Sort
 import sys
 A = [67, 24, 103, 43, 11, 19, 5, 2]
+print(f"Array = {A}")
 
 # Traverse through all array elements
 for i in range(len(A)):
+	print(A)
 	      
 	# Find the minimum element in remaining 
 	# unsorted array
@@ -18,7 +20,6 @@ for i in range(len(A)):
 	A[i], A[min_idx] = A[min_idx], A[i]
   
 # Driver code to test above
-print(f"Array = {A}")
 print ("Sorted array:")
 for i in range(len(A)):
 	print("%d" %A[i]),
