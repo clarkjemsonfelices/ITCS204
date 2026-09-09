@@ -1,40 +1,31 @@
-# Bubble Sort
-arr = [23, 13, 5, 46, -3, 33]
+# Bubble sort
+arr = [17, 28, 4, 63, 54, -6, 7]
 print(f"Array = {arr}")
 
-step = 1
+step = 1 # for counting the steps
 for i in range(len(arr)):
-	index = 0
-	
 	print(f"Iteration {i + 1}") # Iteration count
-	for x in range(1, len(arr)):
+	for x in range(len(arr) - 1):	
 
-		val_idx = arr[index]
-		
-		# Shows the sorts with the bubble elements as 'x''
-		arr[index] = str(arr[index])
+		# Shows the sorts with the bubble elements as ''
+		arr[x] = str(arr[x])
 		print(f"{step}) {arr}")
-		arr[index] = int(arr[index])
+		arr[x] = int(arr[x])
 		
 		# Swapping the elements
-		if arr[index] > arr[index + 1]: # > for ascending, < for descending
-			arr[index] = arr[index + 1]
-			arr[index + 1] = val_idx
-			
-			index +=1
-		else:
-			index += 1
+		if arr[x] > arr[x + 1]: # > for ascending, < for descending
+			arr[x], arr[x + 1] = arr[x + 1], arr[x]
 		step += 1
 		
 	# Shows the last step in an iteration
-	arr[index] = str(arr[index])
+	arr[x + 1] = str(arr[x + 1])
 	print(f"{step}) {arr}")
-	arr[index] = int(arr[index])
+	arr[x + 1] = int(arr[x + 1])
 	
 	step += 1
 	print()
 	
-# Final array
+# Final outcome
 print("Sorted Array:")
 for i in range(len(arr)):
-	print("%d" %arr[i]) # I dont really understand this part
+	print("%d" %arr[i]) # I don't really understand this part
