@@ -29,3 +29,4 @@ for i in range(len(arr)):
 print("Sorted Array:")
 for i in range(len(arr)):
 	print("%d" %arr[i]) # I don't really understand this part
+print(f"({step - 1} Steps & {i + 1} Iterations)")
