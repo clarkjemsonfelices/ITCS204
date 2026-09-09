@@ -1,5 +1,4 @@
-#Trying to make bubble sort
-
+#Bubble Sort
 arr = [32, 12 , 1, 2, 3, 1028, 2026, -2, -23]
 print(f"Array = {arr}")
 
@@ -18,7 +17,7 @@ for i in range(len(arr)):
 		arr[index] = int(arr[index])
 		
 		# Swapping the elements
-		if arr[index] > arr[index + 1]:
+		if arr[index] > arr[index + 1]: # > for ascending, < for descending
 			arr[index] = arr[index + 1]
 			arr[index + 1] = val_idx
 			
