@@ -1,4 +1,4 @@
-#Bubble Sort
+# Bubble Sort
 arr = [23, 13, 5, 46, -3, 33]
 print(f"Array = {arr}")
 
@@ -34,7 +34,7 @@ for i in range(len(arr)):
 	step += 1
 	print()
 	
-# Final outcome
+# Final array
 print("Sorted Array:")
 for i in range(len(arr)):
-	print("%d" %arr[i]),
+	print("%d" %arr[i]) # I dont really understand this part
