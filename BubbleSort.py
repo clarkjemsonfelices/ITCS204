@@ -1,5 +1,5 @@
 #Bubble Sort
-arr = [32, 12 , 1, 2, 3, 1028, 2026, -2, -23]
+arr = [23, 13, 5, 46, -3, 33]
 print(f"Array = {arr}")
 
 step = 1
