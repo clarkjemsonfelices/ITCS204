@@ -3,8 +3,8 @@ arr = [17, 28, 4, 63, 54, -6, 7]
 print(f"Array = {arr}")
 
 step = 1 # for counting the steps
-for i in range(len(arr)):
-	print(f"Iteration {i + 1}") # Iteration count
+for i in range(1, len(arr)):
+	print(f"Iteration {i}") # Iteration count
 	for x in range(len(arr) - 1):	
 
 		# Shows the sorts with the bubble elements as ''
@@ -29,4 +29,4 @@ for i in range(len(arr)):
 print("Sorted Array:")
 for i in range(len(arr)):
 	print("%d" %arr[i]) # I don't really understand this part
-print(f"({step - 1} Steps & {i + 1} Iterations)")
+print(f"({step - 1} Steps & {i} Iterations)")
