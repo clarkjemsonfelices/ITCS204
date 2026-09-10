@@ -9,4 +9,4 @@ Repository for the subject Data Structures and Algorithm - second year, first se
 -Testing sort, Added the sorting steps
 
 [Bubble Sort](https://github.com/clarkjemsonfelices/ITCS204/blob/main/BubbleSort.py)
--Tried to make this program with the sorting steps and iterations based on the previous sorting codes
+-Shows sorting steps and iterations. Made based on the previous sorting codes
