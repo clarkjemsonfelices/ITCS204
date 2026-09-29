@@ -1,32 +1,26 @@
-# Bubble sort
-arr = [17, 28, 4, 63, 54, -6, 7]
-print(f"Array = {arr}")
-
-step = 1 # for counting the steps
-for i in range(1, len(arr)):
-	print(f"Iteration {i}") # Iteration count
-	for x in range(len(arr) - 1):	
-
-		# Shows the sorts with the bubble elements as ''
-		arr[x] = str(arr[x])
-		print(f"{step}) {arr}")
-		arr[x] = int(arr[x])
-		
-		# Swapping the elements
-		if arr[x] > arr[x + 1]: # > for ascending, < for descending
-			arr[x], arr[x + 1] = arr[x + 1], arr[x]
-		step += 1
-		
-	# Shows the last step in an iteration
-	arr[x + 1] = str(arr[x + 1])
-	print(f"{step}) {arr}")
-	arr[x + 1] = int(arr[x + 1])
-	
-	step += 1
-	print()
-	
-# Final outcome
-print("Sorted Array:")
+# Python program for implementation of Bubble Sort
+ 
+def bubbleSort(arr):
+    n = len(arr)
+ 
+    # Traverse through all array elements
+    for i in range(n-1):
+    # range(n) also work but outer loop will repeat one time more than needed.
+ 
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
+ 
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+ 
+# Driver code to test above
+arr = [28, 95, 23, 43, 2, 64, 12, 74]
+ 
+bubbleSort(arr)
+ 
+print ("Sorted array is:")
 for i in range(len(arr)):
-	print("%d" %arr[i]) # I don't really understand this part
-print(f"({step - 1} Steps & {i} Iterations)")
+    print ("% d" % arr[i]),
